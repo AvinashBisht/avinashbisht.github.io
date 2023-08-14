@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-80">
+<meta http-equip="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinash Bisht - Porfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!------------------------------------------------------service------------------------------------------------------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Product Management Certifications</h1>
+        <div class="services-list">
+            <div>
+                
+                <h2><b>Software Product Management</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - University of Alberta </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Agile Software Management, Software Metrics, User Story, Scrum, Extreme Programming, </p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> April 26, 2023 </p><br>
+                <a href="/Certificates/Product Management/Software PM Certificate.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+               
+                <h2>Google Project Management</h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Google </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Project Execution, Project Life Cycle, Risk Management, RACI charts, Stakeholder Management, Agile, Six Sigma, Scrum </p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> March 23, 2023 </p><br>
+                <a href="/Certificates/Product Management/Google Project Management Specialization.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+               
+                <h2>Product Management</h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Great Learning </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Product Life Cycle, Product Management Strategy, Product Design, Innovation and Leadership</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> October, 2022 </p><br>
+                <a href="/Certificates/Product Management/Great Learning - Product Management.jpg" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+                
+                <h2><b>Lean Six Sigma Yellow Belt</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> AIGPE </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Six Sigma Methodology, Six Sigma Tools, Six Sigma principles, Project Management   </p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> May 15, 2023 </p><br>
+                <a href="/Certificates/Product Management/Lean Six Sigm.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+               
+                <h2><b>Agile with Atlassian Jira</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Atlassian University </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Agile Methodology, Jira for Manangers</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> March 04, 2023</p><br>
+                <a href="/Certificates/Product Management/Agile with Atlassian.pdf" target="_blank" style="color: #00FFB0;"><h4><b></b>View Certificate</b></h4></a>
+            </div>
+            <div>
+                
+                <h2><b>Trello Project Management: Complete Course</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Udemy - Uri Soglowek</p><br>
+                <p><h4 style="display:inline">Skills:</h4> Team collaboration using Trello, Trello cards, Trello Boards, Trello Administration, Project Management </p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> August 05, 2023 </p><br>
+                <a href="/Certificates/Product Management/Trello Project Management.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            </div>
+            <div class="services-list">
+            <div>
+                
+                <h2><b>Agile Explorer</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> IBM  SkillsBuild</p><br>
+                <p><h4 style="display:inline">Skills:</h4> Agile values, principles and practices, Kanban, Scrum, Project Management</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> October 16, 2022 </p><br>
+                <a href="/Certificates/Product Management/Agile Explorer.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwGKf_60xDZlQ6XNoZz0GKMZ1jk-QjLMDlQNJa_Me-4gtuRh-27N7edy1P9cVMeK1XQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    
+
+settings = {
+    //Model Popup
+    objModalPopupBtn: ".modalButton",
+    objModalCloseBtn: ".overlay, .closeBtn",
+    objModalDataAttr: "data-popup"
+}  
+  $(settings.objModalPopupBtn).bind("click", function () {
+        if ($(this).attr(settings.objModalDataAttr)) {
+
+            var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+
+            
+            //Fade In Modal Pop Up
+            $(".overlay, #" + strDataPopupName).fadeIn();
+
+        }
+    });
+
+    //On clicking the modal background
+    $(settings.objModalCloseBtn).bind("click", function () {
+        $(".modal").fadeOut();
+    });
+
+</script>
+
+<script>
+    const viewBtn = document.querySelector(".view-modal"),
+    popup = document.querySelector(".popup"),
+    close = popup.querySelector(".close"),
+    field = popup.querySelector(".field"),
+    input = field.querySelector("input"),
+    copy = field.querySelector("button");
+
+    viewBtn.onclick = ()=>{
+      popup.classList.toggle("show");
+    }
+    close.onclick = ()=>{
+      viewBtn.click();
+    }
+
+    copy.onclick = ()=>{
+      input.select(); //select input value
+      if(document.execCommand("copy")){ //if the selected text copy
+        field.classList.add("active");
+        copy.innerText = "Copied";
+        setTimeout(()=>{
+          window.getSelection().removeAllRanges(); //remove selection from document
+          field.classList.remove("active");
+          copy.innerText = "Copy";
+        }, 3000);
+      }
+    }
+  </script>
+</body>
+</html>

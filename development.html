@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-80">
+<meta http-equip="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinash Bisht - Porfolio</title>
+<link rel="stylesheet" href="style1.css">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!------------------------------------------------------service------------------------------------------------------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" style>Development and IT Support Certifications</h1>
+        <div class="services-list">
+            <div>
+         
+                <h2><b>Google IT Automation with Python</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Google </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Version Control, torubleshooting and debugging, python programming, automation, configuration management </p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> September 09, 2022 </p><br>
+                <a href="/Certificates/IT Support/Google IT Automation Certificate.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+          
+              <h2><b>Google IT Support</b></h2><br>
+              <p><h4 style="display:inline">Course Provider:</h4> Coursera - Google</p><br>
+              <p><h4 style="display:inline">Skills:</h4> Debugging, encryption algorithm and techniques, network protocols, cloud computing</p><br>
+              <p><h4 style="display:inline">Date of Certification:</h4> August 04, 2022 </p><br>
+              <a href="/Certificates/IT Support/Google IT Support Certificate.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+          </div>
+          <div>
+         
+            <h2><b>Android Development</b></h2><br>
+            <p><h4 style="display:inline">Course Provider:</h4> Coding Ninjas</p><br>
+            <p><h4 style="display:inline">Skills:</h4> Kotlin variables, operators, strings, conditions, loops, arrays, functions and classes, Android Studio</p><br>
+            <p><h4 style="display:inline">Date of Certification:</h4> July, 2020 </p><br>
+            <a href="/Certificates/IT Support/Coding Ninjas - Android Development.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+        </div>
+        </div>
+        <div class="services-list">
+          <div>
+           
+              <h2><b>CCNA Routing and Switching</b></h2><br>
+              <p><h4 style="display:inline">Course Provider:</h4> Codec Newtorks </p><br>
+              <p><h4 style="display:inline">Skills: </h4> OSI 7 layers, Network Topologies, types of Networks, Network Devices, TCP/IP, IPv4 address, IPv6 address, subnetting, routing protocols, static routing vs dynamic routing, routers and switches, Cisco Packet Tracer, VLAN </p><br>
+              <p><h4 style="display:inline">Date of Certification:</h4> June 21, 2021 </p><br>
+              <a href="/Certificates/IT Support/Codec Networks - CCNA.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+          </div>
+          <div>
+          
+            <h2><b>Linux Fundamentals</b></h2><br>
+            <p><h4 style="display:inline">Course Provider:</h4> Codec Networks</p><br>
+            <p><h4 style="display:inline">Skills:</h4> Root Administration, Linux file system, File management, Managing local users, File permissions, SSH, bash scripting</p><br>
+            <p><h4 style="display:inline">Date of Certification:</h4> September 22, 2021 </p><br>
+            <a href="/Certificates/IT Support/Codec Networks - Linux.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+        </div>
+      </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwGKf_60xDZlQ6XNoZz0GKMZ1jk-QjLMDlQNJa_Me-4gtuRh-27N7edy1P9cVMeK1XQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    
+
+settings = {
+    //Model Popup
+    objModalPopupBtn: ".modalButton",
+    objModalCloseBtn: ".overlay, .closeBtn",
+    objModalDataAttr: "data-popup"
+}  
+  $(settings.objModalPopupBtn).bind("click", function () {
+        if ($(this).attr(settings.objModalDataAttr)) {
+
+            var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+
+            
+            //Fade In Modal Pop Up
+            $(".overlay, #" + strDataPopupName).fadeIn();
+
+        }
+    });
+
+    //On clicking the modal background
+    $(settings.objModalCloseBtn).bind("click", function () {
+        $(".modal").fadeOut();
+    });
+
+</script>
+
+<script>
+    const viewBtn = document.querySelector(".view-modal"),
+    popup = document.querySelector(".popup"),
+    close = popup.querySelector(".close"),
+    field = popup.querySelector(".field"),
+    input = field.querySelector("input"),
+    copy = field.querySelector("button");
+
+    viewBtn.onclick = ()=>{
+      popup.classList.toggle("show");
+    }
+    close.onclick = ()=>{
+      viewBtn.click();
+    }
+
+    copy.onclick = ()=>{
+      input.select(); //select input value
+      if(document.execCommand("copy")){ //if the selected text copy
+        field.classList.add("active");
+        copy.innerText = "Copied";
+        setTimeout(()=>{
+          window.getSelection().removeAllRanges(); //remove selection from document
+          field.classList.remove("active");
+          copy.innerText = "Copy";
+        }, 3000);
+      }
+    }
+  </script>
+</body>
+</html>

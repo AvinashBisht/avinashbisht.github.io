@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-80">
+<meta http-equip="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinash Bisht - Porfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!------------------------------------------------------service------------------------------------------------------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Data Analysis Certifications</h1>
+        <div class="services-list">
+            <div>
+          
+                <h2><b>HackerRank SQL Intermediate</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> HackerRank </p><br>
+                <p><h4 style="display:inline">Skills:</h4> MySQL, CRUD operations, Pattern Matching, Sorting, Filtering, Groupings, Aggregate and String Functions</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> July 28, 2023 </p><br>
+                <a href="/Certificates/Data Analysis/Hackerrank SQL Intermediate.pdf"  target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+          
+                <h2><b>The Complete SQL Bootcamp: Go from Zero to Hero</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Udemy - Jose Portilla </p><br>
+                <p><h4 style="display:inline">Skills:</h4> PostgreSQL, CRUD operations, Sorting, Filtering, Groupings, Aggregate Functions</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> July 28, 2023 </p><br>
+                <a href="/Certificates/Data Analysis/SQL Bootcamp.pdfs" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+           
+                <h2><b>Google Data Analytics</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Google </p><br>
+                <p><h4 style="display:inline">Skills:</h4> PostgreSQL, CRUD operations, Sorting, Filtering, Groupings, Aggregate Functions</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> September 09, 2022 </p><br>
+                <a href="/Certificates/Data Analysis/Google Data Analytics Certificate.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+        </div>
+        <div class="services-list">
+            <div>
+        
+                <h2><b>Google Business Intelligence</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Google </p><br>
+                <p><h4 style="display:inline">Skills:</h4> PostgreSQL, CRUD operations, Sorting, Filtering, Groupings, Aggregate Functions</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> June 16, 2022 </p><br>
+                <a href="/Certificates/Data Analysis/Google BI Certificate.pdf" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+      
+                <h2><b>Business Metrics for Data-Driven Companies</b></h2><br>
+                <p><h4 style="display:inline">Course Provider:</h4> Coursera - Duke University </p><br>
+                <p><h4 style="display:inline">Skills:</h4> Data Analysis, Business Analysis, Business Analytics, Business Processes</p><br>
+                <p><h4 style="display:inline">Date of Certification:</h4> TBD </p><br>
+                <a href="#" target="_blank" style="color: #00FFB0;"><h4><b>View Certificate</b></h4></a>
+            </div>
+            <div>
+     
+                <h2><b>Microsoft Excel - Excel from Beginner to Advanced</b></h2><br>
+                <p><h4 style="display:inline; color:#00FFB0">Course Provider:</h4> Udemy - Kyle Pew </p><br>
+                <p><h4 style="display:inline; color:#00FFB0">Skills:</h4> Basics of Excel, dynamic formulas like Vlookup, Pivot Tables, VBA and Macros </p><br>
+                <p><h4 style="display:inline; color:#00FFB0">Date of Certification:</h4> TBD </p><br>
+                <a href="#" target="_blank"><h4><b>View Certificate</b></h4></a>
+            </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwGKf_60xDZlQ6XNoZz0GKMZ1jk-QjLMDlQNJa_Me-4gtuRh-27N7edy1P9cVMeK1XQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    
+
+settings = {
+    //Model Popup
+    objModalPopupBtn: ".modalButton",
+    objModalCloseBtn: ".overlay, .closeBtn",
+    objModalDataAttr: "data-popup"
+}  
+  $(settings.objModalPopupBtn).bind("click", function () {
+        if ($(this).attr(settings.objModalDataAttr)) {
+
+            var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+
+            
+            //Fade In Modal Pop Up
+            $(".overlay, #" + strDataPopupName).fadeIn();
+
+        }
+    });
+
+    //On clicking the modal background
+    $(settings.objModalCloseBtn).bind("click", function () {
+        $(".modal").fadeOut();
+    });
+
+</script>
+
+<script>
+    const viewBtn = document.querySelector(".view-modal"),
+    popup = document.querySelector(".popup"),
+    close = popup.querySelector(".close"),
+    field = popup.querySelector(".field"),
+    input = field.querySelector("input"),
+    copy = field.querySelector("button");
+
+    viewBtn.onclick = ()=>{
+      popup.classList.toggle("show");
+    }
+    close.onclick = ()=>{
+      viewBtn.click();
+    }
+
+    copy.onclick = ()=>{
+      input.select(); //select input value
+      if(document.execCommand("copy")){ //if the selected text copy
+        field.classList.add("active");
+        copy.innerText = "Copied";
+        setTimeout(()=>{
+          window.getSelection().removeAllRanges(); //remove selection from document
+          field.classList.remove("active");
+          copy.innerText = "Copy";
+        }, 3000);
+      }
+    }
+  </script>
+</body>
+</html>
